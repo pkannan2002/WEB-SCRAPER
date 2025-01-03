@@ -63,7 +63,8 @@ if st.session_state.show_form:
     You can discuss with like-minded people and gain knowledge from it. If you wish to join the community, fill this with your details.
     """)
 
-    logo_base64 = get_image_base64(r"C:\Users\pkann\OneDrive\Desktop\mew\linkedIn_PNG32.png")
+    logo_base64 = get_image_base64("linkedIn_PNG32.png")
+
 
     # LinkedIn Banner with Styling
     st.markdown(
