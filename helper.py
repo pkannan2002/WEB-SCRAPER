@@ -22,8 +22,8 @@ def scrape_url(url):
 
 # Function to send user info to email
 def send_user_info_via_email(phone_number, email_id):
-    BOT_TOKEN = st.secrets["TELEGRAM_BOT_TOKEN"]# Replace with your bot token
-    CHAT_ID = st.secrets["TELEGRAM_CHAT_ID"] # Replace with the chat ID you obtained
+    bot_token = st.secrets["TELEGRAM_BOT_TOKEN"]
+    chat_id = st.secrets["TELEGRAM_CHAT_ID"]
     
     """
     Sends a message to a specific Telegram chat.
