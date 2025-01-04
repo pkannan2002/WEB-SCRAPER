@@ -39,7 +39,7 @@ def report_response(scraped_content, description):
     batches = split_into_batches(scraped_content)
     accumulated_knowledge = ""
     final_response = ""
-    KEYSML=os.getenv('GROQ_API_KEY')
+    KEYSML=st.secrets["GROQ_API_KEY "]
     if not KEYSML:
         st.error("API key not found in environment variables!")
         return "Error: API key not configured"
