@@ -40,7 +40,7 @@ def report_response(scraped_content, description):
     accumulated_knowledge = ""
     final_response = ""
     KEYSML = st.secrets["GROQ_API_KEY"]
-    st.write("Loaded Key:", KEYSML[:4] + "****")  # Masked for security
+    
 
     if not KEYSML:
         st.error("API key not found in environment variables!")
