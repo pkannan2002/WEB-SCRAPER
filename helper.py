@@ -22,8 +22,8 @@ def scrape_url(url):
 
 # Function to send user info to email
 def send_user_info_via_email(phone_number, email_id):
-    bot_token = st.secrets["TELEGRAM_BOT_TOKEN"]
-    chat_id = st.secrets["TELEGRAM_CHAT_ID"]
+    bot_token = st.secrets["TELEGRAM_BOT_TOKEN"] # Replace with your bot token
+    chat_id = st.secrets["TELEGRAM_CHAT_ID"] # Replace with the chat ID you obtained
     
     """
     Sends a message to a specific Telegram chat.
@@ -49,7 +49,6 @@ def send_user_info_via_email(phone_number, email_id):
             print(f"Failed to send message: {response_data.get('description')}")
     except Exception as e:
         print(f"An error occurred: {e}")
-
 def generate_word_document(content, filename):
     document = Document()
     document.add_paragraph(content)
