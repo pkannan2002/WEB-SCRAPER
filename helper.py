@@ -4,7 +4,7 @@ from io import BytesIO
 from docx import Document
 import os
 from dotenv import load_dotenv
-import streamlet
+import streamlit as st
 
 load_dotenv()
 
