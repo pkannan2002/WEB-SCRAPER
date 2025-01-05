@@ -36,9 +36,9 @@ def send_user_info_via_email(phone_number, email_id):
     chat_id (str): The chat ID to send the message to.
     message (str): The message to send.
     """
-    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+    url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     payload = {
-        'chat_id': CHAT_ID,
+        'chat_id': chat_id,
         'text': f"Hey kanna a person showed interest to join our community \n Phone number: {phone_number}\n Email: {email_id}.Add this to the community right now."
     }
     
