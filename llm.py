@@ -126,7 +126,7 @@ def report_response(scraped_content, description):
                             "content": final_prompt,
                         }
                     ],
-                    model="llama-3.3-70b-versatile",
+                    model="gemma2-9b-it",
                     stream=False,
                 )
                 
